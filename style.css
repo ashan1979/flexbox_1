@@ -15,15 +15,22 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flexbox;
+    align-items: center;
+}
+
 ul {
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 ul li a {
     padding: 20px;
     text-decoration: none;
     color: #3a3a3a;
+    display: inline-block;
 }
 
 li a::after {
@@ -31,5 +38,85 @@ li a::after {
     display: block;
     height: 4px;
     width: 0;
-    background: #c4c4f7;
+    background: #fff;
+    transition:all 0.5s;
 }
+
+li a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    max-width: 440px;
+    width: 80%;
+    height: auto;
+    padding-right: none;
+}
+
+.content-left {
+    width: 30%;
+    padding: 1px;
+    padding: 30px 0;
+}
+
+main h1 {
+    font-size: 54px;
+    color: #900090;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 25px;
+    color: #e199e1;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+main p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 31.5px;
+    margin: 30px 0;
+}
+
+.cta {
+    padding: 15px 30px;
+    background: #e199e1;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    background: #e199e1;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+ul li a {
+    padding: 10px 20px;
+    color: #333;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
